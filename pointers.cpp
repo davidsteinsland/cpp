@@ -26,6 +26,12 @@ char* constructString (const char *input, const char *msg)
 	return output;
 }
 
+/**
+ * Appends msg to input, and stores the result
+ * into the pointer output.
+ * To modify pointers, we have to modify its own pointer.
+ * Thus **output and not *output.
+ */
 void appendString (const char *input, char **output, const char *msg)
 {
 	*output = new char;
